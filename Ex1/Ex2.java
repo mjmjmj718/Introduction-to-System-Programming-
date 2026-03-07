@@ -2,7 +2,7 @@ public class Ex2
 {
 	public static void main(String arg[])
 	{
-		Time time = new Time(0,0,0);
+		Time time = new Time();
 		time.IncreSecond();
 		System.out.println(time);
 
@@ -26,6 +26,13 @@ class Time
 	private int hour;	
 	private int minute;
 	private int second;
+
+	Time()
+	{
+		this.hour   = 0;
+		this.minute = 0;
+		this.second = 0;
+	}
 
 	Time(int hour, int minute, int second)
 	{
